@@ -1,9 +1,8 @@
 package com.tryclass
 
 object binarytree {
-  val t1 = new NonEmpty(3, new Empty, new Empty)
-  //> t1  : com.tryclass.NonEmpty = {.3.}
-  val t2 = t1 incl 4
+  val t1 = new NonEmpty(3, new Empty, new Empty)  //> t1  : com.tryclass.NonEmpty = {.3.}
+  val t2 = t1 incl 4                              //> t2  : com.tryclass.IntSet = {.3{.4.}}
 }
 
 abstract class IntSet {

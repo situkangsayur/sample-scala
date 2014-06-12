@@ -1,8 +1,8 @@
 package com.tryclass
 
-object binarytree {
-  val t1 = new NonEmpty(3, new Empty, new Empty)  //> t1  : com.tryclass.NonEmpty = {.3.}
-  val t2 = t1 incl 4                              //> t2  : com.tryclass.IntSet = {.3{.4.}}
+object binarytree {;import org.scalaide.worksheet.runtime.library.WorksheetSupport._; def main(args: Array[String])=$execute{;$skip(90); 
+  val t1 = new NonEmpty(3, new Empty, new Empty);System.out.println("""t1  : com.tryclass.NonEmpty = """ + $show(t1 ));$skip(21); 
+  val t2 = t1 incl 4;System.out.println("""t2  : com.tryclass.IntSet = """ + $show(t2 ))}
 }
 
 abstract class IntSet {
