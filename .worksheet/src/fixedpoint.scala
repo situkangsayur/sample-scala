@@ -13,7 +13,8 @@ object fixedpoint {;import org.scalaide.worksheet.runtime.library.WorksheetSuppo
 			else iterate(next)
 		}
 		iterate(firstGuess)
-	};System.out.println("""fixedPoint: (f: Double => Double)(firstGuess: Double)Double""");$skip(29); val res$0 = 
+	};System.out.println("""fixedPoint: (f: Double => Double)(firstGuess: Double)Double""");$skip(31); val res$0 = 
+	
 	fixedPoint(x => 1 + x/2)(1);System.out.println("""res0: Double = """ + $show(res$0));$skip(53); 
 	def sqrt(x: Double) = fixedPoint(y => (y+x/y)/2)(1);System.out.println("""sqrt: (x: Double)Double""");$skip(10); val res$1 = 
   sqrt(2);System.out.println("""res1: Double = """ + $show(res$1))}

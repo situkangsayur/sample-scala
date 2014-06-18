@@ -14,6 +14,7 @@ object fixedpoint {
 		}
 		iterate(firstGuess)
 	}                                         //> fixedPoint: (f: Double => Double)(firstGuess: Double)Double
+	
 	fixedPoint(x => 1 + x/2)(1)               //> res0: Double = 1.999755859375
 	def sqrt(x: Double) = fixedPoint(y => (y+x/y)/2)(1)
                                                   //> sqrt: (x: Double)Double
