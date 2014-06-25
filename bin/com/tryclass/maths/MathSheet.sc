@@ -1,8 +1,5 @@
 package com.tryclass.maths
 
-import com.tryclass.maths.Expr
-import com.tryclass.maths.Number
-import com.tryclass.maths.Sum
 
 object MathSheet {
 
@@ -11,5 +8,4 @@ object MathSheet {
     else if (e.isSum) eval(e.leftOp) + eval(e.rightOp)
     else throw new Error("unknown expression "+e)
   }                                               //> eval: (e: com.tryclass.maths.Expr)Int
-
 }

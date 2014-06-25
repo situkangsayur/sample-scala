@@ -41,5 +41,6 @@ object sorting {;import org.scalaide.worksheet.runtime.library.WorksheetSupport.
   };System.out.println("""msort: (xs: List[Int])List[Int]""");$skip(35); 
 
   val nums = List(2, -4, 5, 7, 1);System.out.println("""nums  : List[Int] = """ + $show(nums ));$skip(18); val res$0 = 
-  margeSort(nums);System.out.println("""res0: List[Int] = """ + $show(res$0))}
+  margeSort(nums);System.out.println("""res0: List[Int] = """ + $show(res$0));$skip(37); 
+  val pairs = nums zip "hello world";System.out.println("""pairs  : List[(Int, Char)] = """ + $show(pairs ))}
 }

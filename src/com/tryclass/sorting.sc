@@ -42,4 +42,5 @@ object sorting {
 
   val nums = List(2, -4, 5, 7, 1)                 //> nums  : List[Int] = List(2, -4, 5, 7, 1)
   margeSort(nums)                                 //> res0: List[Int] = List(-4, 1, 2, 5, 7)
+  val pairs = nums zip "hello world"              //> pairs  : List[(Int, Char)] = List((2,h), (-4,e), (5,l), (7,l), (1,o))
 }
